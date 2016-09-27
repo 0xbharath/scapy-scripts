@@ -2,6 +2,10 @@ from __future__ import print_function
 from sys import argv
 from scapy.all import rdpcap, IP
 
+def help_text():
+    print("Usage: python all_devices.py path_to_pcap")
+    sys.exit()
+
 def extract_machine_names(pcap):
     machines = []
     packets = rdpcap(pcap)
@@ -17,5 +21,5 @@ def extract_machine_names(pcap):
 if __name__ == '__main__':
     pcap = argv[1]
     if len(argv) < 2:
-        print("Usage: python all_devices.py path_to_pcap")
+        help_text()
     print("\nList of all the machines in pcap =>", extract_machine_names(pcap),end="\n\n")
