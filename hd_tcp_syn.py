@@ -5,7 +5,6 @@
 #---------------------------------------------------------------------#
 
 
-from __future__ import print_function          # importing print as a function feature(just a best practice)
 from scapy.all import IP, TCP, sr1, sr         # Importing only the necessary classes from scapy
 import sys
 import logging                                 #Surpress scapy warnings by logging them
