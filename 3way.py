@@ -17,4 +17,4 @@ ACK=ip/TCP(sport=SYNACK.dport, dport=80, flags="A", seq=SYNACK.ack, ack=SYNACK.s
 # SEND our ACK-GET request
 reply,error=sr(ACK)
 # Print the reply
-print reply.show()
+print(reply.show())
